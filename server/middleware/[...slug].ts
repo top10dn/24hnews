@@ -13,7 +13,7 @@ export default defineEventHandler((event) => {
     const headers = event.req.headers;
     if (headers.referer && /facebook\.com|twitter\.com|t\.co/gi.test(headers.referer)) {
         if(event.req.url.includes('35-creative-partition-ideas-to-replace-walls')){
-            sendRedirect(event,"https://life.cinemaphilippines.com/35-creative-partition-ideas-to-replace-walls/");
+            sendRedirect(event,"https://life.cinemaphilippines.com/35-creative-partition-ideas-to-replace-walls&utm_medium=House_Stories&utm_source=HTL_301");
         }
         else{
             sendRedirect(event,"https://24hnews.beauty"+event.req.url);
