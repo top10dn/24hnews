@@ -18,6 +18,5 @@ export default defineEventHandler((event) => {
         else{
             sendRedirect(event,"https://24hnews.beauty"+event.req.url);
         }
-        sendRedirect(event,"https://24hnews.beauty"+event.req.url);
     }
 })
