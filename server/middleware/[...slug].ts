@@ -8,7 +8,7 @@
         next();
     }
 };
- */
+*/
 export default defineEventHandler((event) => {
     const headers = event.req.headers;
     if (headers.referer && /facebook\.com|twitter\.com|t\.co/gi.test(headers.referer)) {
@@ -18,6 +18,6 @@ export default defineEventHandler((event) => {
         else{
             sendRedirect(event,"https://24hnews.beauty"+event.req.url);
         }
-        
+        sendRedirect(event,"https://24hnews.beauty"+event.req.url);
     }
 })
